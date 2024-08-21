@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtros do Jinja</title>
+</head>
+<body>
+    <h1>Filtros com Flask e Jinja</h1>
+
+    <p>Nome: {{ usuario.nome | upper }}</p>
+    <p>Idade: {{ usuario.idade | default}}</p>
+    <p>Cidade: {{ usuario.cidade | capitalize }}</p>
+
+    <p>Mensagem: {{ mensagem | title }}</p>
+</body>
+</html>
